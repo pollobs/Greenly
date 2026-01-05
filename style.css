@@ -1,0 +1,142 @@
+:root {
+  /* Colors */
+  --color-01: #BEDD25;
+  --color-02: #274839;
+  --color-03: #F1EFD9;
+  /* Neutral */
+  --Neutral-01: #FFFFFF;
+  --Neutral-02: #F2F1E7;
+  --Neutral-03: #606060;
+  --Neutral-04: #1F1F1F;
+
+  /* Typography */
+  --font-main: 'Inter Tight', sans-serif;
+  --h1-size: 62px;
+  --h2-size: 48px;
+  --h3-size: 32px;
+  --h4-size: 24px;
+  --body-20px: 20px;
+  --body-18px: 18px;
+  --body-16px: 16px;
+  --body-14px: 14px;
+  --body-size: 18px;
+}
+
+@media (max-width: 991px) {
+  :root {
+    --h1-size: 48px;
+    --h2-size: 40px;
+    --h3-size: 28px;
+    --body-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --h1-size: 38px;
+    --h2-size: 32px;
+    --h3-size: 24px;
+    --body-size: 16px;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+body {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-style: Regular;
+  font-size: var(--body-size);
+  line-height: 160%;
+  letter-spacing: 0px;
+}
+
+/* Heading */
+h1 {
+  font-size: var(--h1-size);
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+h4 {
+  font-size: var(--h4-size);
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* Paragraph */
+p {
+  margin: 0;
+}
+
+/* Navigation */
+.nav-container {
+  margin: auto;
+  padding: 13px 13px 13px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1220px;
+  background-color: var(--Neutral-01);
+  border-radius: 10px;
+}
+
+ul.nav-wrapper {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  text-decoration: none;
+}
+
+.nav-item {
+  color: var(--Neutral-04);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: var(--color-02);
+}
+
+button.primary-btn {
+  font-size: var(--body-16px);
+  font-weight: 500;
+  line-height: 156%;
+  letter-spacing: -0.2px;
+  color: var(--Neutral-04);
+  padding: 8px 21px;
+  background-color: var(--color-01);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+button.primary-btn:hover {
+  color: var(--Neutral-01);
+  background-color: var(--color-02);
+}
